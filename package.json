@@ -1,0 +1,25 @@
+{
+  "name": "podnosniki-wordpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donlonger/Podnosniki-Nysa.git"
+  },
+  "author": "Michał Lachowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donlonger/Podnosniki-Nysa/issues"
+  },
+  "homepage": "https://github.com/donlonger/Podnosniki-Nysa#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  }
+}
