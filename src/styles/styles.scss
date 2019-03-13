@@ -1,0 +1,231 @@
+@import "_0-global.scss";
+
+#header {
+    @include center();
+    position: fixed;
+    top: 35px;
+    width: 100%;
+    z-index: 10;
+    transition: .3s all;
+
+    &.fixed {
+        background: white;
+        border: 1px solid color(yellow, 1, 1);
+    }
+
+    svg {
+        height: 45px;
+        width: 45px;
+        fill: color(yellow, 1, 1)!important; 
+    }
+
+    .menu {
+        ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0 50px;
+
+            li {
+                font-size: 18px; 
+                padding: 25px 20px;
+                position: relative;
+                color: white;
+                transition: .3s all;
+
+                &.fixed {
+                    color: rgb(36, 28, 28); 
+                }
+
+                &:first-child {
+                    margin-right: auto;
+                    font-weight: 600;
+                    transition: .3s all;
+                    font-size: 22px;
+                    
+                    
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+
+                    a {
+
+                        &::before {
+                            display: none;
+                        }
+
+                        h3 {
+                            align-self: center;
+                            padding-left: 20px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                a {
+                    position: relative;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    
+                    &::before {
+                        content: "";
+                        height: 5px;
+                        background-color: color(yellow, 1, 1);
+                        position: absolute;
+                        left: 0;
+                        right: 100%;
+                        transition: 0.2s left ease-out, 0.2s right ease-out;
+                        z-index: -1;
+                        bottom: 14px;
+                        bottom: -8px;
+                    }
+
+                    &:hover {
+                        &::before {
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#top {
+
+    display: flex;
+    background-image: url(/build/img/homepage.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+    .top-content {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 340px;
+
+        @media (max-width: 1400px) {
+            margin-top: 200px;
+        }
+
+        h1, h2, h3, h4 {
+            color: white;
+            width: 70%;
+        }
+
+        h1 {
+            line-height: 1.2em;
+            width: 50%;
+            text-transform: uppercase;
+
+            &.phone-number {
+                font-size: 52px;
+            }
+        }
+
+        h2 {
+            position: relative;
+            padding-bottom: 60px;
+
+            &::after {
+                content: "";
+                height: 2px;
+                background-color: color(yellow, 1, 1);
+                position: absolute;
+                left: 0;
+                width: 130px;
+                right: 100%;
+                transition: 0.2s left ease-out, 0.2s right ease-out;
+                bottom: 25px;
+            }
+        }
+
+        h3, h4 {
+            padding: 4px 0;
+            font-weight: 600;
+        }
+
+        .button {
+            border: 1px solid rgba(255,172,50, .8);
+            border-radius: 4px;
+            padding: 15px 25px;
+            background-color: color(yellow, 1, .8);
+            transition: all .3s ease-in;
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+            align-self: center;
+            align-self: flex-start;
+            margin-top: 10px;
+        
+            &:hover {
+                background: color(white, 1, 1);
+                color: black;
+                border: 1px solid white;
+                cursor: pointer;
+            }
+        }
+        
+        #scroll {
+            align-self: center;
+            margin-top: auto;
+            padding: 0 0 15px 0;
+            transition: .3s all;
+
+            &:hover {
+                padding: 0 0 8px 0;
+                cursor: pointer;
+            }
+
+            svg {
+                fill: color(yellow, 1, 1);
+                height: 30px;
+                width: 50px;
+            }
+        }
+    }
+}
+
+.content {
+
+    p {
+        font-size: 20px;
+        text-align: center;
+        padding: 60px 0 0 0;
+        position: relative;
+    }
+
+    h3 {
+        text-align: center;
+        padding: 40px 0 0 0;
+        position: relative;
+
+        &:nth-child(2n) {
+            padding: 20px 0 0 0;
+        }
+    }
+}
+
+.text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+
+    h5 {
+        position: relative;
+        padding: 20px 0 0 90px;
+        font-size: 18px;
+        width: 450px;
+
+        &::before {
+            content: url(/build/img/check-mark.svg);
+            @include center();
+            left: 10%;
+            top: 80%;
+        }
+    }
+    }

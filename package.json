@@ -21,5 +21,9 @@
     "gulp-clean-css": "^4.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.3.4",
+    "photoswipe": "^4.1.3"
   }
 }

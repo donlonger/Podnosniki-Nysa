@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=latin-ext");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:active, a:visited, a:link {
+  text-decoration: none; }
+
+*:focus {
+  outline: none; }
+
+strong {
+  font-weight: bold; }
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px; }
+
+.page-limit {
+  width: 1300px;
+  max-width: 1300px;
+  margin: 0 auto; }
+  @media (max-width: 1400px) {
+    .page-limit {
+      width: 1200px;
+      max-width: 1200px; } }
+  @media (max-width: 1300px) {
+    .page-limit {
+      width: 1000px;
+      max-width: 1000px; } }
+  @media (max-width: 1000px) {
+    .page-limit {
+      width: 700px;
+      max-width: 700px; } }
+  @media (max-width: 700px) {
+    .page-limit {
+      width: 500px;
+      max-width: 500px; } }
+  @media (max-width: 500px) {
+    .page-limit {
+      width: 400px;
+      max-width: 400px; } }
+  @media (max-width: 400px) {
+    .page-limit {
+      width: 320px;
+      max-width: 320px; } }
+
+h1 {
+  font-size: 42px;
+  font-weight: 700; }
+  h1.offer-header {
+    position: relative;
+    text-align: center;
+    padding: 60px 0 0 0; }
+    h1.offer-header::after {
+      content: "";
+      height: 3px;
+      background-color: #FFAC32;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 130px;
+      width: 100px;
+      transition: 0.2s left ease-out, 0.2s right ease-out;
+      bottom: 0px; }
+  @media (max-width: 1360px) {
+    h1 {
+      font-size: 42px;
+      margin-top: 30px; } }
+  @media (max-width: 1000px) {
+    h1 {
+      font-size: 32px;
+      text-align: center; } }
+  @media (max-width: 700px) {
+    h1 {
+      font-size: 26px;
+      text-align: center; } }
+  @media (max-width: 700px) {
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      padding: 0 20px; } }
+
+p {
+  font-size: 18px;
+  line-height: 24px; }
+  @media (max-width: 1360px) {
+    p {
+      font-size: 18px;
+      padding: 0 20px; } }
+  @media (max-width: 500px) {
+    p {
+      padding: 0; } }
+
+h2 {
+  font-size: 36px;
+  font-weight: 300; }
+
+h3 {
+  font-size: 22px;
+  position: relative;
+  font-weight: 600; }
+  @media (max-width: 1360px) {
+    h3 {
+      font-size: 18px; } }
+  @media (max-width: 700px) {
+    h3 {
+      font-size: 16px;
+      text-align: center; } }
+
+h4 {
+  font-size: 22px;
+  position: relative;
+  font-weight: 600; }
+  @media (max-width: 1360px) {
+    h4 {
+      font-size: 18px; } }
+  @media (max-width: 700px) {
+    h4 {
+      font-size: 16px;
+      text-align: center; } }
+
+#header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 35px;
+  width: 100%;
+  z-index: 10;
+  transition: .3s all; }
+  #header.fixed {
+    background: white;
+    border: 1px solid #FFAC32; }
+  #header svg {
+    height: 45px;
+    width: 45px;
+    fill: #FFAC32 !important; }
+  #header .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 50px; }
+    #header .menu ul li {
+      font-size: 18px;
+      padding: 25px 20px;
+      position: relative;
+      color: white;
+      transition: .3s all; }
+      #header .menu ul li.fixed {
+        color: #241c1c; }
+      #header .menu ul li:first-child {
+        margin-right: auto;
+        font-weight: 600;
+        transition: .3s all;
+        font-size: 22px; }
+        #header .menu ul li:first-child:hover {
+          transform: scale(1.03); }
+        #header .menu ul li:first-child a::before {
+          display: none; }
+        #header .menu ul li:first-child a h3 {
+          align-self: center;
+          padding-left: 20px;
+          font-weight: 400; }
+      #header .menu ul li a {
+        position: relative;
+        height: 30px;
+        display: flex;
+        align-items: center; }
+        #header .menu ul li a::before {
+          content: "";
+          height: 5px;
+          background-color: #FFAC32;
+          position: absolute;
+          left: 0;
+          right: 100%;
+          transition: 0.2s left ease-out, 0.2s right ease-out;
+          z-index: -1;
+          bottom: 14px;
+          bottom: -8px; }
+        #header .menu ul li a:hover::before {
+          right: 0; }
+
+#top {
+  display: flex;
+  background-image: url(/build/img/homepage.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover; }
+  #top .top-content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 340px; }
+    @media (max-width: 1400px) {
+      #top .top-content {
+        margin-top: 200px; } }
+    #top .top-content h1, #top .top-content h2, #top .top-content h3, #top .top-content h4 {
+      color: white;
+      width: 70%; }
+    #top .top-content h1 {
+      line-height: 1.2em;
+      width: 50%;
+      text-transform: uppercase; }
+      #top .top-content h1.phone-number {
+        font-size: 52px; }
+    #top .top-content h2 {
+      position: relative;
+      padding-bottom: 60px; }
+      #top .top-content h2::after {
+        content: "";
+        height: 2px;
+        background-color: #FFAC32;
+        position: absolute;
+        left: 0;
+        width: 130px;
+        right: 100%;
+        transition: 0.2s left ease-out, 0.2s right ease-out;
+        bottom: 25px; }
+    #top .top-content h3, #top .top-content h4 {
+      padding: 4px 0;
+      font-weight: 600; }
+    #top .top-content .button {
+      border: 1px solid rgba(255, 172, 50, 0.8);
+      border-radius: 4px;
+      padding: 15px 25px;
+      background-color: rgba(255, 172, 50, 0.8);
+      transition: all .3s ease-in;
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+      align-self: center;
+      align-self: flex-start;
+      margin-top: 10px; }
+      #top .top-content .button:hover {
+        background: #ffffff;
+        color: black;
+        border: 1px solid white;
+        cursor: pointer; }
+    #top .top-content #scroll {
+      align-self: center;
+      margin-top: auto;
+      padding: 0 0 15px 0;
+      transition: .3s all; }
+      #top .top-content #scroll:hover {
+        padding: 0 0 8px 0;
+        cursor: pointer; }
+      #top .top-content #scroll svg {
+        fill: #FFAC32;
+        height: 30px;
+        width: 50px; }
+
+.content p {
+  font-size: 20px;
+  text-align: center;
+  padding: 60px 0 0 0;
+  position: relative; }
+
+.content h3 {
+  text-align: center;
+  padding: 40px 0 0 0;
+  position: relative; }
+  .content h3:nth-child(2n) {
+    padding: 20px 0 0 0; }
+
+.text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 40px; }
+  .text-wrapper h5 {
+    position: relative;
+    padding: 20px 0 0 90px;
+    font-size: 18px;
+    width: 450px; }
+    .text-wrapper h5::before {
+      content: url(/build/img/check-mark.svg);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      left: 10%;
+      top: 80%; }

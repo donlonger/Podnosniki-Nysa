@@ -1,8 +1,8 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var uglify = require('gulp-uglify');
-var pump = require('pump');
-let cleanCSS = require('gulp-clean-css');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const uglify = require('gulp-uglify');
+const pump = require('pump');
+const cleanCSS = require('gulp-clean-css');
 
 gulp.task('sass', function () {
 	return gulp.src('./src/styles/*.scss')

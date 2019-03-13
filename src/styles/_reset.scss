@@ -41,3 +41,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active, a:visited, a:link {
+	text-decoration: none;
+}
+
+*:focus {
+	outline: none;
+}
+
+strong { font-weight: bold; }
