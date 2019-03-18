@@ -20,6 +20,18 @@ body {
 	font-size: $base-font-size;
 }
 
+.orange {
+	color: black!important;
+	background: color(yellow, 1, 1)!important;
+	background-image: -moz-linear-gradient(top, #ffac32 0%, #ff7c00 85%, #ff7c00 94%, #ff7f04 100%)!important; /* FF3.6-15 */
+	background-image: -webkit-linear-gradient(top, #ffac32 0%,#ff7c00 85%,#ff7c00 94%,#ff7f04 100%)!important; /* Chrome10-25,Safari5.1-6 */
+	background-image: linear-gradient(to bottom, #ffac32 0%,#ff7c00 85%,#ff7c00 94%,#ff7f04 100%)!important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffac32', endColorstr='#ff7f04',GradientType=0 ); 
+}
+
+h1,h2,h3,h4,h5, p, div {
+	font-weight: 300;
+}
 
 .page-limit {
 	width: 1300px;
@@ -86,18 +98,14 @@ h1 {
 
 	@media(max-width: 1000px) {
 		font-size: 32px;
-		text-align: center;
 	}
 
 	@media(max-width: 700px) {
 		font-size: 26px;
-		text-align: center;
 	}
 
 	@media(max-width: 700px) {
 		font-size: 24px;
-		text-align: center;
-		padding: 0 20px;
 	}
 }
 
@@ -118,6 +126,10 @@ p {
 h2 {
 	font-size: 36px;
 	font-weight: 300;
+
+	@media (max-width: 700px) {
+		font-size: 20px;
+	}
 }
 
 h3 {
@@ -131,7 +143,6 @@ h3 {
 
 	@media(max-width: 700px ) {
 		font-size: 16px;
-		text-align: center;
 	}
 }
 
@@ -146,6 +157,32 @@ h4 {
 
 	@media(max-width: 700px ) {
 		font-size: 16px;
-		text-align: center;
 	}
+}
+
+ul {
+	position: relative;
+
+	&.line {
+		&::after {
+			content: "";
+			height: 3px;
+			background-color: color(yellow, 1, 1);
+			@include center();
+			top: 65px;
+			width: 100px;
+			transition: 0.2s left ease-out, 0.2s right ease-out;
+			bottom: 0px;
+		}
+	}
+}
+
+
+.bgnd {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	max-height: 1200px;
+	min-height: 200px;
 }

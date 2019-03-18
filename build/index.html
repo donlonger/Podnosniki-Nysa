@@ -8,8 +8,6 @@
     <meta name="description" content="Podnośnik koszowy, usługi dźwigowe. Woj. Opolskie - Nysa, Głuchołazy. Zapytaj o Profesjonalny Wynajem Dźwigu i Podnośnika, Zadzwoń Po Darmową Wycenę Już Dziś!">
     <meta name="keywords" content="Dzwig Uslugi dzwigowe dzwigiem wynajem dzwigu podnosnikiem uslugi podnosnikiem koszowym uslugi zwyżka wynajem podnosnika wynajem podnosnika koszowego">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css"> 
-    <link rel="stylesheet" type="text/css" href="/node_modules/photoswipe/dist/photoswipe.css"> 
-    <link rel="stylesheet" type="text/css" href="/node_modules/photoswipe/dist/default-skin/default-skin.css"> 
 </head>
 <body>
     <section id="header">
@@ -25,7 +23,7 @@
                     <a href="#gallery">Galeria</a>
                 </li>
                 <li>
-                    <a href="#Contact">Kontakt</a>
+                    <a href="#contact">Kontakt</a>
                 </li>
                 <li>
                     <a href="#Contact">Partnerzy</a>
@@ -41,9 +39,10 @@
             <h1>
                 Usługi dźwigowe
             </h1>
-            <h2>
+            <h2 class="styler">
                 Wojwództwo Opolskie - Nysa, Głuchołazy, okolice
             </h2>
+            <h2 class="small">Otmuchów Paczków Prudnik Grodków Niemodlin Opole</h2>
             <h3>
                 Zapytaj o profesjonalny wynajem dźwigu i podnośnika
             </h3>
@@ -51,149 +50,195 @@
                 Zadzwoń po darmową wycenę już dziś!
             </h4>
             <h1 class="phone-number">
-                508 397 778
+                <a href="tel:508397778">508 397 778</a>
             </h1>
             <div class="button">
                 KONTAKT
             </div>
             <span id="scroll">
-                <a href="#">
+                <a href="#gallery">
                     <img src="/build/img/scroll.svg" class="svg">
                 </a>
             </span>
         </div>
     </section>
-    <section class="content page-limit">
-        <h1 class="offer-header">Oferta</h1>
-        <p>
-            Oferujemy do wynajęcia podnośnik koszowy wraz z operatorem do pracy na wysokościach. 
-            Posiadamy w ofercie podnośnik do <strong>19,5 metra</strong> i maksymalnym wysięgu bocznym do <strong>10 metrów.</strong>
-        </p>
-        <h3>
-            Podnośnik wynajmujemy do różnorodnych prac na wysokościach
-        </h3>
-        <h3>
-            Wykonujemy takie prace jak:
-        </h3>
-    </section>
-    <section class="text-wrapper page-limit">
-        <h5>
-            wycinka i przycinka drzew - pielęgnacja zieleni,
-        </h5>
-        <h5>
-            mycie okien oraz parapetów,
-        </h5>
-        <h5>
-            mycie i malowanie elewacji,
-        </h5>
-        <h5>
-            czyszczenie i naprawa rynien,
-        </h5>
-        <h5>
-            prace blacharsko - dekarskie,
-        </h5>
-        <h5>
-            montaż klimatyzatorów i instalacji elektrycznych,
-        </h5>
-        <h5>
-            udrażnianie rynien spustowych z liści mchu i porostów,
-        </h5>
-        <h5>
-            czyszczenie gzymsów m.in. z odchodów ptasich,
-        </h5>
-        <h5>
-            montaż anten satelitarnych i radiowych,
-        </h5>
-        <h5>
-            mycie banerów i kasetonów reklamowych
-        </h5>
-        <h5>
-            usuwanie sopli i nawisów śnieżnych,
-        </h5>
-        <h5>
-            montaż kolców przeciwko ptakom,
-        </h5>
-        <h5>
-            montaż monitoringu
-        </h5>
-        <h5>
-            i wiele innych prac wysokościowych 
-        </h5>
-    </section>
-    <section id="gallery">
-        <h1 class="offer-header">Galeria</h1>
-        
-    </section>
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-            It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
+    <section class="content">
+        <div class="offer-text page-limit">
+            <h1 class="offer-header">Oferta</h1>
+            <p class="styler">
+                Oferujemy do wynajęcia podnośnik koszowy wraz z operatorem do pracy na wysokościach. 
+            </p>
+            <p>
+                    Posiadamy w ofercie podnośnik do <strong>19,5 metra</strong> i maksymalnym wysięgu bocznym do <strong>10 metrów.</strong>
+            </p>
+            <h5>Wykonujemy również usługi dźwigiem <strong>20 ton, 28 metrów</strong></h5>
+            <h4>Wymiary samochodu</h4>
+            <ul>
+                <li>
+                    <span>Długość</span> <span>770 cm</span>
+                </li>
+                <li>
+                    <span>Szerokość transportowa</span><span>230 cm</span>
+                </li>
+                <li>
+                    <span>Szerokość przy rozłożonych podporach</span><span>340 cm</span>
+                </li>
+                <li>
+                    <span>Wysokość transportowa</span><span> 310 cm</span>
+                </li>
+            </ul>
         </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
+        <div class="offer-chart bgnd bgnd-1 js-parallax-bg" style="background-image: url(/build/img/offer-chart.jpg)">
+            <div class="page-limit">
+                <div>
+                    <img src="img/1.svg" class="svg">
+                    <p>Podnośnik na bieżąco konserwowany z aktualnym przeglądem UDT</p>
+                </div>
+                <div>
+                    <img src="img/2.svg" class="svg">
+                    <p>Na wyposażeniu znajduje się niezbędny sprzęt do pracy na wysokościach tj . szelki bezpieczeństwa z atestem oraz liny </p>
+                </div>
+                <div>
+                    <img src="img/3.svg" class="svg">
+                    <p>Cennik za w/w usługi po zapoznaniu się z konkretnym zleceniem</p>
+                </div>
+                <div>
+                    <img src="img/4.svg" class="svg">
+                    <p>Za usługi wystawiamy faktury VAT</p>
                 </div>
             </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
+        </div>
+        <div class="offer-text page-limit">
 
         </div>
-
-    </div>
-
-</div>
+    </section>
+    <section class="text-chart page-limit">
+        <h3>
+            Podnośnik wynajmujemy do różnorodnych prac na wysokościach takich jak:
+        </h3>
+        <div class="text-wrapper">
+            <h5>
+                wycinka i przycinka drzew - pielęgnacja zieleni,
+            </h5>
+            <h5>
+                mycie okien oraz parapetów,
+            </h5>
+            <h5>
+                mycie i malowanie elewacji,
+            </h5>
+            <h5>
+                czyszczenie i naprawa rynien,
+            </h5>
+            <h5>
+                prace blacharsko - dekarskie,
+            </h5>
+            <h5>
+                montaż klimatyzatorów i instalacji elektrycznych,
+            </h5>
+            <h5>
+                udrażnianie rynien spustowych z liści mchu i porostów,
+            </h5>
+            <h5>
+                czyszczenie gzymsów m.in. z odchodów ptasich,
+            </h5>
+            <h5>
+                montaż anten satelitarnych i radiowych,
+            </h5>
+            <h5>
+                mycie banerów i kasetonów reklamowych
+            </h5>
+            <h5>
+                usuwanie sopli i nawisów śnieżnych,
+            </h5>
+            <h5>
+                montaż kolców przeciwko ptakom,
+            </h5>
+            <h5>
+                montaż monitoringu
+            </h5>
+            <h5>
+                i wiele innych prac wysokościowych 
+            </h5>
+        </div>
+    </section>
+    <section id="gallery">
+        <h1 class="offer-header ">Galeria</h1>
+        <div class="gallery page-limit">
+            <div class="big">
+                <div>
+                    <img class="image" src="img/1_min.jpg" data-gallery-src="img/1.jpg" alt="Podnośnik Koszowy">
+                </div>
+            </div>
+            <div>
+                <img class="image" src="img/4_min.jpg" data-gallery-src="img/4.jpg" alt="Podnośnik Koszowy">
+            </div>
+            <div>
+                <img class="image" src="img/3_min.jpg" data-gallery-src="img/3.jpg" alt="Podnośnik Koszowy">
+            </div>
+            <div>
+                <img class="image" src="img/5_min.jpg" data-gallery-src="img/5.jpg" alt="Podnośnik Koszowy">
+            </div>
+            <div>
+                <img class="image" src="img/6_min.jpg" data-gallery-src="img/6.jpg" alt="Podnośnik Koszowy">
+            </div>
+            <div>
+                <img class="image" src="img/2_min.jpg" data-gallery-src="img/2.jpg" alt="Podnośnik Koszowy">
+            </div>
+            <div>
+                <img class="image" src="img/8_min.jpg" data-gallery-src="img/8.jpg" alt="Podnośnik Koszowy">
+            </div>
+            <div>
+                <img class="image" src="img/10_min.jpg" data-gallery-src="img/10.jpg" alt="Podnośnik Koszowy">
+            </div>
+            <div>
+                <img class="image" src="img/14_min.jpg" data-gallery-src="img/14.jpg" alt="Podnośnik Koszowy">
+            </div>
+            <div>
+                <img class="image" src="img/9_min.jpg" data-gallery-src="img/9.jpg" alt="Podnośnik Koszowy">
+            </div>
+            <div>
+                <img class="image" src="img/12_min.jpg" data-gallery-src="img/12.jpg" alt="Podnośnik Koszowy">
+            </div>
+            <div>
+                <img class="image" src="img/13_min.jpg" data-gallery-src="img/13.jpg" alt="Podnośnik Koszowy">
+            </div>
+            <div>
+                    <img class="image" src="img/11_min.jpg" data-gallery-src="img/11.jpg" alt="Podnośnik Koszowy">
+                </div>
+            <div>
+                <img class="image" src="img/7_min.jpg" data-gallery-src="img/7.jpg" alt="Podnośnik Koszowy">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div id="map">
+        </div>
+        <div class="form-wrapper">
+                <?php echo do_shortcode("[[wpforms id="5" title="false" description="false"]]"); ?>
+                <div class="form-style-6">
+                <h1>Poproś o wycenę! <a href="mailto:podnosniknysa@interia.pl">podnosniknysa@interia.pl</a></h1>
+                    <form>
+                    <input type="text" name="field1" placeholder="Imię" />
+                    <input type="email" name="field2" placeholder="Adres Email" />
+                    <textarea name="field3" placeholder="Wiadomość"></textarea>
+                    <input type="submit" value="Wyślij" />
+                    </form>
+                </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="page-limit">
+            <span>Michał Lachowski 2019</span>
+        </div>
+    </section>
 </body>
+<script type="text/javascript">
+	var pin = 'img/placeholder.png'
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/node_modules/photoswipe/dist/photoswipe.min.js"></script> 
-<script src="/node_modules/photoswipe/dist/photoswipe-ui-default.min.js"></script> 
-<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="/build/scripts/gallery.min.js"></script>
+<script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
 <script src="scripts/scripts.js"></script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3GeNZgT_rcmxq1UOltvqemWZ21kuSGZQ&callback=initMap"></script>
 </html>
