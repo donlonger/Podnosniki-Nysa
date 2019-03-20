@@ -77,7 +77,11 @@ h1 {
 	&.offer-header {
 		position: relative;
 		text-align: center;
-		padding: 60px 0 0 0;
+		padding: 70px 0 0 0;
+
+		@media (max-width: 600px) {
+			padding: 30px 0 0 0;
+		}
 
 		&::after {
 			content: "";
@@ -88,7 +92,13 @@ h1 {
 			width: 100px;
 			transition: 0.2s left ease-out, 0.2s right ease-out;
 			bottom: 0px;
+
+			@media (max-width: 600px) {
+				top: 70px;
+			}
 		}
+
+
 	}
 
 	@media (max-width: 1360px) {
@@ -104,8 +114,9 @@ h1 {
 		font-size: 26px;
 	}
 
-	@media(max-width: 700px) {
+	@media(max-width: 500px) {
 		font-size: 24px;
+		margin-top: 10px;
 	}
 }
 
@@ -120,6 +131,7 @@ p {
 
 	@media(max-width: 500px) {
 		padding: 0;
+		font-size: 16px!important;
 	}
 }
 
@@ -183,6 +195,6 @@ ul {
 	background-position: 50% 0;
 	background-repeat: no-repeat;
 	background-size: cover; 
-	max-height: 1200px;
+	max-height: 1700px;
 	min-height: 200px;
 }

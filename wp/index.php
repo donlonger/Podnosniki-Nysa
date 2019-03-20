@@ -1,10 +1,9 @@
-<?php get_header();?>
 <section id="header">
         <div class="menu">
             <ul>
                 <li>
                     <a href="#">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon.svg" class="svg">
+                        <img src="img/icon.svg" class="svg">
                         <h3>PODNOŚNIK NYSA</h3>
                     </a>
                 </li>
@@ -20,7 +19,7 @@
             </ul>
         </div>
     </section>
-    <section id="top" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/homepage.jpg">
+    <section id="top">
         <div class="top-content page-limit">
             <h1>
                 Podnośnik koszowy
@@ -31,7 +30,6 @@
             <h2>
                 Wojwództwo Opolskie - Nysa, Głuchołazy, okolice
             </h2>
-
             <h3>
                 Zapytaj o profesjonalny wynajem dźwigu i podnośnika
             </h3>
@@ -39,14 +37,14 @@
                 Zadzwoń po darmową wycenę już dziś!
             </h4>
             <h1 class="phone-number">
-                <a href="tel:508397778">508 397 778</a>
+                508 397 778
             </h1>
             <div class="button">
                 KONTAKT
             </div>
             <span id="scroll">
                 <a href="#gallery">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/scroll.svg" class="svg">
+                    <img src="/build/img/scroll.svg" class="svg">
                 </a>
             </span>
         </div>
@@ -130,51 +128,21 @@
     </section>
     <section id="gallery">
         <h1 class="offer-header">Galeria</h1>
-        <div class="gallery page-limit">
-            <div class="big">
-                <div>
-                    <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/1_min.jpg" data-gallery-src="img/1.jpg" alt="Podnośnik Koszowy">
-                </div>
-            </div>
-            <div>
-                <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/4_min.jpg" data-gallery-src="<?php echo get_stylesheet_directory_uri(); ?>/img/4.jpg" alt="Podnośnik Koszowy">
-            </div>
-            <div>
-                <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/3_min.jpg" data-gallery-src="<?php echo get_stylesheet_directory_uri(); ?>/img/3.jpg" alt="Podnośnik Koszowy">
-            </div>
-            <div>
-                <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/5_min.jpg" data-gallery-src="<?php echo get_stylesheet_directory_uri(); ?>/img/5.jpg" alt="Podnośnik Koszowy">
-            </div>
-            <div>
-                <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/6_min.jpg" data-gallery-src="<?php echo get_stylesheet_directory_uri(); ?>/img/6.jpg" alt="Podnośnik Koszowy">
-            </div>
-            <div>
-                <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/2_min.jpg" data-gallery-src="<?php echo get_stylesheet_directory_uri(); ?>/img/2.jpg" alt="Podnośnik Koszowy">
-            </div>
-            <div>
-                <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/8_min.jpg" data-gallery-src="<?php echo get_stylesheet_directory_uri(); ?>/img/8.jpg" alt="Podnośnik Koszowy">
-            </div>
-            <div>
-                <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/10_min.jpg" data-gallery-src="<?php echo get_stylesheet_directory_uri(); ?>/img/10.jpg" alt="Podnośnik Koszowy">
-            </div>
-            <div>
-                <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/14_min.jpg" data-gallery-src="<?php echo get_stylesheet_directory_uri(); ?>/img/14.jpg" alt="Podnośnik Koszowy">
-            </div>
-            <div>
-                <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/9_min.jpg" data-gallery-src="<?php echo get_stylesheet_directory_uri(); ?>/img/9.jpg" alt="Podnośnik Koszowy">
-            </div>
-            <div>
-                <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/12_min.jpg" data-gallery-src="<?php echo get_stylesheet_directory_uri(); ?>/img/12.jpg" alt="Podnośnik Koszowy">
-            </div>
-            <div>
-                <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/13_min.jpg" data-gallery-src="<?php echo get_stylesheet_directory_uri(); ?>/img/13.jpg" alt="Podnośnik Koszowy">
-            </div>
-            <div>
-                    <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/11_min.jpg" data-gallery-src="<?php echo get_stylesheet_directory_uri(); ?>/img/11.jpg" alt="Podnośnik Koszowy">
-                </div>
-            <div>
-                <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/7_min.jpg" data-gallery-src="<?php echo get_stylesheet_directory_uri(); ?>/img/7.jpg" alt="Podnośnik Koszowy">
-            </div>
+        <div class="gallery">
+            <img class="image" src="img/1.jpg" data-gallery-src="img/1.jpg" alt="Podnośnik Koszowy">
+            <img class="image" src="img/2.jpg" data-gallery-src="img/2.jpg" alt="Podnośnik Koszowy">
+            <img class="image" src="img/3.jpg" data-gallery-src="img/3.jpg" alt="Podnośnik Koszowy">
+            <img class="image" src="img/4.jpg" data-gallery-src="img/4.jpg" alt="Podnośnik Koszowy">
+            <img class="image" src="img/5.jpg" data-gallery-src="img/5.jpg" alt="Podnośnik Koszowy">
+            <img class="image" src="img/6.jpg" data-gallery-src="img/6.jpg" alt="Podnośnik Koszowy">
+            <img class="image" src="img/7.jpg" data-gallery-src="img/7.jpg" alt="Podnośnik Koszowy">
+            <img class="image" src="img/8.jpg" data-gallery-src="img/8.jpg" alt="Podnośnik Koszowy">
+            <img class="image" src="img/9.jpg" data-gallery-src="img/9.jpg" alt="Podnośnik Koszowy">
+            <img class="image" src="img/10.jpg" data-gallery-src="img/10.jpg" alt="Podnośnik Koszowy">
+            <img class="image" src="img/11.jpg" data-gallery-src="img/11.jpg" alt="Podnośnik Koszowy">
+            <img class="image" src="img/12.jpg" data-gallery-src="img/12.jpg" alt="Podnośnik Koszowy">
+            <img class="image" src="img/13.jpg" data-gallery-src="img/14.jpg" alt="Podnośnik Koszowy">
+            <img class="image" src="img/14.jpg" data-gallery-src="img/15.jpg" alt="Podnośnik Koszowy">
         </div>
     </section>
     <section id="contact">
@@ -182,7 +150,7 @@
         </div>
         <div class="form-wrapper">
                 <div class="form-style-6">
-                <h1>Poproś o wycenę! <a href="mailto:podnosniknysa@interia.pl">podnosniknysa@interia.pl</a></h1>
+                <h1>Poproś o wycenę! podnosniknysa@interia.pl</h1>
                     <form>
                     <input type="text" name="field1" placeholder="Imię" />
                     <input type="email" name="field2" placeholder="Adres Email" />
@@ -197,4 +165,3 @@
             <span>Michał Lachowski 2019</span>
         </div>
     </section>
-<?php get_footer();?>

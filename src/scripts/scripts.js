@@ -1,3 +1,4 @@
+
 (function(fn) {
     'use strict';
 	fn.scrollTop = $(this).scrollTop();
@@ -27,13 +28,41 @@ $(document).ready(function(){
         $(this).next(".menu").toggleClass("open");
     });
 
-	$(".nav-bar  .menu a").click(function () {
-        $(".nav-bar #burger").toggleClass("open"); 
-        $(".nav-bar  .logo").removeClass("open");
-        $(".nav-bar  .menu").slideToggle(100);
-        $(".nav-bar  .menu").toggleClass("open");
-        
-    });
+    fn.updateVars();
+
+    $(window).ready(function() {
+      fn.updateVars();
+      if ($(window).width() < 999) {
+        $("#header .menu").addClass("mobile-menu");
+      }
+      else $("#header .menu").removeClass("mobile-menu");
+      
+      fn.updateVars();
+      if($(window).width() > 700) {
+        $(window).scroll(doParallax); 
+      }
+
+      });
+    
+
+      $("#header #burger").click(function () { 
+            fn.updateVars();
+            if ($(window).width() < 999) {
+              $(this).toggleClass("open");
+              $(this).next(".menu").slideToggle(50);
+              $(this).next(".menu").toggleClass("open");
+            }
+        });
+    
+      $("#header  .menu a").click(function () {
+            fn.updateVars();
+            if ($(window).width() < 999) {
+              $("#header #burger").toggleClass("open"); 
+              $("#header  .logo").removeClass("open");
+              $("#header  .menu").slideToggle(100);
+              $("#header .menu").toggleClass("open");
+            }
+        });
  
     $(window).scroll(function() {
         fn.updateVars();
@@ -374,5 +403,3 @@ function doParallax() {
       el.style.backgroundPosition = '50% '+Math.round((elOffset - offset)*5/8)+'px';
   }
 }
-
-$(window).scroll(doParallax);
